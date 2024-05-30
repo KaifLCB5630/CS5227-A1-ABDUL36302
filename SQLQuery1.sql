@@ -1,0 +1,1 @@
+﻿ALTER TABLE AspNetUserTokens ADD CONSTRAINT PK_AspNetUserTokens PRIMARY KEY ([UserId],[LoginProvider],[Name])

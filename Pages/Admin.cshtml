@@ -1,0 +1,74 @@
+﻿@page
+@model CS5227_A1_ABDUL36302.Pages.AdminModel
+@{
+    ViewData["Title"] = "Admin - Manage Food Items";
+}
+
+<h2 class="text-center">Welcome Admin</h2>
+
+<h3>Food Items</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Created Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.FoodItems)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+                <td>@item.Category</td>
+                <td>@item.Price.ToString("C")</td>
+                <td><img src="@item.ImageUrl" alt="@item.Name" style="max-width: 100px;" /></td>
+                <td>@item.CreatedDate?.ToString("g")</td>
+                <td>
+                    <form method="post">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        <button type="submit" formaction="?handler=Edit" class="btn btn-primary">Edit</button>
+                        <button type="submit" formaction="?handler=Delete" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>@(Model.IsEditMode ? "Edit Food Item" : "Create Food Item")</h3>
+
+<form method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="CurrentFoodItem.Id" />
+    <div class="form-group">
+        <label asp-for="CurrentFoodItem.Name" class="control-label"></label>
+        <input asp-for="CurrentFoodItem.Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="CurrentFoodItem.Description" class="control-label"></label>
+        <input asp-for="CurrentFoodItem.Description" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="CurrentFoodItem.Category" class="control-label"></label>
+        <input asp-for="CurrentFoodItem.Category" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="CurrentFoodItem.Price" class="control-label"></label>
+        <input asp-for="CurrentFoodItem.Price" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="CurrentFoodItem.ImageUrl" class="control-label"></label>
+        <input asp-for="CurrentFoodItem.ImageUrl" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="CurrentFoodItem.CreatedDate" class="control-label"></label>
+        <input asp-for="CurrentFoodItem.CreatedDate" class="form-control" />
+    </div>
+    <button type="submit" formaction="?handler=Save" class="btn btn-primary">@(Model.IsEditMode ? "Update" : "Create")</button>
+</form>

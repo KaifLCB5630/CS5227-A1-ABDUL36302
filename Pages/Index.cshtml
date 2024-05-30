@@ -1,0 +1,81 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<a href="/User">User</a>
+<a href="/Admin">Admin</a>
+<a href="/Client">Client</a>
+
+<div class="custom-container">
+    <div class="custom-row custom-shadow custom-rounded">
+        <div class="custom-col-6">
+            <div id="carouselExampleSlidesOnly" class="custom-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner custom-full-height">
+                    <div class="carousel-item custom-full-height active">
+                        <img src="/images/indeximg/indexpizza.jpeg"
+                             class="custom-img custom-full-size" alt="image">
+                    </div>
+                    <div class="carousel-item custom-full-height">
+                        <img src="/images/indeximg/indexmeals.jpeg"
+                             class="custom-img custom-full-size" alt="image">
+                    </div>
+                    <div class="carousel-item custom-full-height">
+                        <img src="/images/indeximg/indexchukka.jpeg"
+                             class="custom-img custom-full-size" alt="image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-col-6">
+            <div class="custom-margin-bottom">
+                <h2 class="custom-heading">Get The Best<span class="custom-text-success custom-italic"> Food</span> From <span class="custom-text-success">The Best Restaurants.</span></h2>
+            </div>
+            <div class="custom-margin-bottom custom-padding">
+                <span><i class="fa-solid fa-seedling custom-text-success custom-margin-right custom-icon-size"></i></span>
+                <span class="custom-font-size custom-dark-text custom-italic">Fresh Food</span>
+            </div>
+            <div class="custom-margin-bottom custom-padding">
+                <span><i class="fa-solid fa-wheat-awn custom-text-success custom-margin-right custom-icon-size"></i></span>
+                <span class="custom-font-size custom-dark-text custom-italic">Healthy Meal</span>
+            </div>
+            <div class="custom-margin-bottom custom-padding">
+                <span><i class="fa-solid fa-person-biking custom-text-success custom-margin-right custom-icon-size"></i></span>
+                <span class="custom-font-size custom-dark-text custom-italic">Faster Delivery</span>
+                <p class="custom-paragraph custom-padding-top">Food Delivered In 30 Minutes</p>
+            </div>
+        </div>
+    </div>
+    <div class="custom-row custom-margin-top">
+        <div class="custom-col-12 custom-margin-bottom">
+            <h2 class="custom-dark-text custom-italic">Today's Special</h2>
+            <div id="todayspecial" class="custom-row">
+                <div class="custom-col-4">
+                    <div class="custom-card custom-shadow custom-rounded">
+                        <img class="custom-card-img-top custom-full-height" src="/images/indeximg/bbqpizza.jpeg" alt="dish" />
+                        <div class="custom-card-body">
+                            <p class="custom-card-title custom-bold">Barbeque Pizza</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-col-4">
+                    <div class="custom-card custom-shadow custom-rounded">
+                        <img class="custom-card-img-top custom-full-height" src="/images/indeximg/cake.jpeg" alt="dish" />
+                        <div class="custom-card-body">
+                            <p class="custom-card-title custom-bold">Pink Velvet Cake</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-col-4">
+                    <div class="custom-card custom-shadow custom-rounded">
+                        <img class="custom-card-img-top custom-full-height" src="/images/indeximg/pancake.jpeg" alt="dish" />
+                        <div class="custom-card-body">
+                            <p class="custom-card-title custom-bold">Strawberry Pancake</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

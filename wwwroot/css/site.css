@@ -1,0 +1,221 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+
+.text-pink {
+    color: #ff1448 !important;
+}
+
+.nav-link {
+    letter-spacing: 2px;
+}
+
+#carouselExampleSlidesOnly {
+    height: 400px;
+}
+
+footer {
+    background-color: #0d243d;
+}
+/* General container and row styling */
+.custom-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.custom-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.custom-col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 15px;
+}
+
+.custom-col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 15px;
+}
+
+.custom-col-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 15px;
+}
+
+/* Shadow and rounded corner styles */
+.custom-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-rounded {
+    border-radius: 10px;
+}
+
+/* Carousel and image styles */
+.custom-carousel {
+    overflow: hidden;
+}
+
+.custom-full-height {
+    height: 100%;
+}
+
+.custom-full-size {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Typography and text styles */
+.custom-heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.custom-text-success {
+    color: #28a745;
+}
+
+.custom-italic {
+    font-style: italic;
+}
+
+.custom-font-size {
+    font-size: 1.25rem;
+}
+
+.custom-dark-text {
+    color: #333;
+}
+
+.custom-bold {
+    font-weight: bold;
+}
+
+.custom-paragraph {
+    font-size: 1rem;
+    color: #333;
+}
+
+.custom-padding-top {
+    padding-top: 10px;
+}
+
+/* Margin and padding utilities */
+.custom-margin-bottom {
+    margin-bottom: 1rem;
+}
+
+.custom-padding {
+    padding: 1rem;
+}
+
+.custom-margin-top {
+    margin-top: 1rem;
+}
+
+.custom-margin-right {
+    margin-right: 0.5rem;
+}
+
+/* Icon size */
+.custom-icon-size {
+    font-size: 1.5rem;
+}
+
+/* Card styles */
+.custom-card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+    .custom-card:hover {
+        transform: scale(1.05);
+    }
+
+.custom-card-img-top {
+    height: 75%;
+}
+
+.custom-card-body {
+    padding: 10px;
+}
+
+.custom-card-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+header {
+    z-index: 1000;
+}
+
+.dishcard {
+    height: 250px;
+}
+
+.fa-instagram {
+    color: #bc2a8d;
+}
+
+.fa-whatsapp {
+    color: #128c73;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-envelope-open {
+    color: #BB001B;
+}
+
+#Shop-list {
+    top: 5rem;
+}
+
+    #Shop-list::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    #Shop-list::-webkit-scrollbar-track {
+        background-color: #ffffff;
+    }
+
+    #Shop-list::-webkit-scrollbar-thumb {
+        background-color: #ff1448;
+        border-radius: 10px;
+    }
+
+.Shop-item:hover {
+    background-color: #0d243d;
+    border-radius: 10px;
+}
+
+    .Shop-item:hover a {
+        color: white !important;
+    }
